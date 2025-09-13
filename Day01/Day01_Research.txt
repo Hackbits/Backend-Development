@@ -1,0 +1,8 @@
+Day 01 Research: GET vs POST
+GET: It is mainly used to retrieve specific data from the server. Data is sent in the forms of parameters and can be visible in URl's, server logs,browser history.
+POST: It is mainly used to submit data, update an existing data in the web server to modify the server state.
+It is not visible in Url's, makes it more secure. Data is sent in the forms of request body.
+
+404 and 500:
+404(Not Found): It is a server side error in which a client is successfully able to communicate with the server but the server is unable to process the request by the cliect.
+500(internal server error): It is mainly occured when the server encounters a problem while processing the clients request due to internal server error.
