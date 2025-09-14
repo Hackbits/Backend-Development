@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Website{% endblock %}</title>
+</head>
+<body>
+    <nav>
+        <a href="{{url_for("home")}}">Home</a>
+        <a href="{{url_for("about")}}">About</a>
+    </nav>
+    <h1>Welcome to my site.</h1>
+    {% block content %}
+
+    {% endblock %}
+
+    <footer>@ 15/09/2025 -My First App</footer>
+</body>
+</html>
