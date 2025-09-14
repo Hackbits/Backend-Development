@@ -3,7 +3,6 @@ from flask import Flask
 app = Flask(__name__)
 
 @app.route("/")
-
 def hello():
     return "Hello World!"
 
@@ -11,4 +10,5 @@ def hello():
 def about():
     return "This is about page. Day 2 is going well!"
 
-
+if __name__=="main":
+    app.run(debug=True)
