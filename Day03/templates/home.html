@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+
+{% block title %}Home - My Flask App{% endblock %}
+
+{% block content %}
+<div class="row align-items-center">
+    <div class="col-lg-6">
+        <h1 class="display-4 fw-bold">Welcome to Flask</h1>
+        <p class="lead">This is your Day 3 implementation of template inheritance.</p>
+        <p class="text-muted">Today's message: <span class="fw-bold text-primary">{{ message }}</span></p>
+        <div class="my-4">
+            <a href="#" class="btn btn-primary btn-lg me-2">Get Started</a>
+            <a href="{{ url_for('about') }}" class="btn btn-outline-secondary btn-lg">Learn More</a>
+        </div>
+    </div>
+    <div class="col-lg-6">
+        <img src="https://via.placeholder.com/500x300" alt="Placeholder" class="img-fluid rounded">
+    </div>
+</div>
+
+<div class="row mt-5">
+    <div class="col-lg-4 mb-4">
+        <div class="feature-icon bg-primary">
+            <i class="fas fa-code"></i>
+        </div>
+        <h3>Template Inheritance</h3>
+        <p>Create a base template with common elements and extend it in child templates.</p>
+    </div>
+    <div class="col-lg-4 mb-4">
+        <div class="feature-icon bg-success">
+            <i class="fas fa-cogs"></i>
+        </div>
+        <h3>Dynamic Content</h3>
+        <p>Pass variables from your Python code to templates with Jinja2 syntax.</p>
+    </div>
+    <div class="col-lg-4 mb-4">
+        <div class="feature-icon bg-info">
+            <i class="fas fa-mobile-alt"></i>
+        </div>
+        <h3>Responsive Design</h3>
+        <p>Using Bootstrap to create layouts that work on all device sizes.</p>
+    </div>
+</div>
+{% endblock %}

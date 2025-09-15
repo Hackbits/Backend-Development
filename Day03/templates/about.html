@@ -1,0 +1,33 @@
+{% extends "base.html" %}
+
+{% block title %}About - My Flask App{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-lg-8 mx-auto">
+        <h2 class="fw-bold">About This Project</h2>
+        <p class="lead">This is a simple Flask application demonstrating template inheritance.</p>
+        
+        <div class="card my-4">
+            <div class="card-body">
+                <h5 class="card-title">What You've Learned</h5>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Creating a base template with common elements</li>
+                    <li class="list-group-item">Extending templates using {% raw %}{% extends %}{% endraw %}</li>
+                    <li class="list-group-item">Passing variables from Python to templates</li>
+                    <li class="list-group-item">Using Bootstrap for styling</li>
+                </ul>
+            </div>
+        </div>
+        
+        <h4>Next Steps</h4>
+        <p>In the coming days, you'll learn about:</p>
+        <ol>
+            <li>Working with databases</li>
+            <li>User authentication</li>
+            <li>Building REST APIs</li>
+            <li>Deployment to production</li>
+        </ol>
+    </div>
+</div>
+{% endblock %}
